@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Banner/index.css'
+import banner from './../../assets/Images/banner-girl.png'
 
 const Banner = () => {
     return (
@@ -10,7 +11,7 @@ const Banner = () => {
                         <img
                             alt="SRSolution"
                             className="mb-8 w-full dark:contrast-200 sm:mb-0 sm:ml-4 sm:w-1/2 z-10"
-                            src="images/banner-girl.png"
+                            src={banner}
                         />
                         <div className="mr-4 w-full ml-10 md:text-left sm:w-1/2 sm:text-left z-20">
                             <h1 className="mb-4 text-4xl font-bold leading-tight dark:text-dark-50 md:text-6xl text-blue-950">
