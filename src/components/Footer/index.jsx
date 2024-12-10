@@ -2,6 +2,7 @@ import React from 'react'
 import { FaPhone, FaLocationDot, FaFacebook, FaInstagram, FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import '../Footer/index.css'
+import logoSRS from './../../assets/Images/logo.png'
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div className="flex items-center justify-center lg:justify-start gap-2 text-[#3F65B7]">
-                <img src="logo.png" alt="SRSolution Logo" className="w-8 h-6" />
+                <img src={logoSRS} alt="SRSolution Logo" className="w-8 h-6" />
                 <span className='font-bold text-2xl tracking-widest'>SRSolution</span>
               </div>
               <p className="max-w-md mx-auto mt-6 leading-relaxed text-gray-400 sm:max-w-xs sm:mx-0 justified">

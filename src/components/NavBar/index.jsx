@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import '../NavBar/index.css';
+import logoSRS from './../../assets/Images/logo.png'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,8 +22,8 @@ const Navbar = () => {
 
   const handleClickOutside = (e) => {
     if (dropdownRef.current && !dropdownRef.current.contains(e.target) &&
-      buttonRef.current &&
-      !buttonRef.current.contains(e.target)) {
+      buttonRef.current && !buttonRef.current.contains(e.target)
+    ) {
       setIsDropdownOpen(false);
     }
   };
@@ -35,12 +36,102 @@ const Navbar = () => {
     };
   }, []);
 
+  const services = [
+    {
+      link: "/services/WebDevelopment",
+      name: "Web Development",
+      details: [
+        "Frontend Development",
+        "Backend Development",
+        "Full-stack Development",
+        "CMS Development",
+        "E-commerce Development",
+      ],
+    },
+    {
+      link: "/services/AppDevelopment",
+      name: "App Development",
+      details: [
+        "Native App Development",
+        "Cross-Platform Development",
+      ],
+    },
+    {
+      link: "/services/DigitalMarketing",
+      name: "Digital Marketing",
+      details: [
+        "Search Engine Optimization (SEO)",
+        "Social Media Marketing (SMM)",
+        "Content Marketing",
+        "Email Marketing",
+      ],
+    },
+    {
+      link: "/services/SoftwareDevelopment",
+      name: "Software Development",
+      details: [
+        "Custom Software Solutions",
+        "Enterprise Software Development",
+        "API Development and Integration",
+        "Desktop Application Development",
+      ],
+    },
+    {
+      link: "/services/UI&UXDesign",
+      name: "UI/UX Design",
+      details: [
+        "User Experience Research",
+        "Responsive Design",
+        "Interaction Design",
+        "Design Systems Development",
+      ],
+    },
+    {
+      link: "https://sysrootsolution.com/",
+      name: "Marketing CRM",
+      details: [
+        "Connect with third-party tools that you're already using.",
+      ],
+    },
+    {
+      link: "/services/CCTVInstallation",
+      name: "CCTV Installation",
+      details: [
+        "Residential CCTV Solutions",
+        "Commercial CCTV Solutions",
+        "CCTV Accessories",
+        "Additional Services",
+      ],
+    },
+    {
+      link: "/services/BusinessServices",
+      name: "Business Services",
+      details: [
+        "IT Support Services",
+        "Digital Transformation",
+        "Corporate Communication",
+        "Marketing and Branding",
+      ],
+    },
+    {
+      link: "/services/Domain&Hosting",
+      name: "Domain and Hosting",
+      details: [
+        "Domain Registration",
+        "Specialized Hosting",
+        "Domain and Hosting Management",
+        "Website Security Services",
+        "Technical Support",
+      ],
+    },
+  ];
+
   return (
     <nav className="sticky top-0 z-[9999999]">
       <div className='w-full bg-blue-100'>
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2 md:p-5 relative">
           <a href="http://www.sysrootsolution.com" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="logo.png" className="h-7 md:h-14 px-2" alt="SRS Logo" />
+            <img src={logoSRS} className="h-7 md:h-14 px-2" alt="SRS Logo" />
           </a>
           <button
             onClick={toggleMenu}
@@ -96,91 +187,27 @@ const Navbar = () => {
       </div>
       {isDropdownOpen && (
         <div id="mega-menu-full-dropdown" ref={dropdownRef} className="z-[99999] mt-1 border-gray-200 shadow bg-white dark:bg-gray-800  md:bg-blue-100 border-y dark:border-gray-600 static md:absolute w-full">
-          <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-3 md:px-6">
-            <ul>
-              <li>
-                <NavLink to="/services/WebDevelopment" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <div className="font-semibold text-[#3F65B7]">Web Development</div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Frontend Development</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Backend Development</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Full-stack Development</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">CMS Development</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">E-commerce Development</p>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/services/AppDevelopment" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <div className="font-semibold text-[#3F65B7]">App Development</div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Native App Development</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Cross-Platform Development</p>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/services/DigitalMarketing" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <div className="font-semibold text-[#3F65B7]">Digital Marketing</div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Search Engine Optimization (SEO)</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Social Media Marketing (SMM)</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Content Marketing</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Email Marketing</p>
-                </NavLink>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <NavLink to="/services/AppDevelopment" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <div className="font-semibold text-[#3F65B7]">Software Development</div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Custom Software Solutions</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Enterprise Software Development</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">API Development and Integration</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Desktop Application Development</p>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/services/UI&UXDesign" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <div className="font-semibold text-[#3F65B7]">UI/UX Design</div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">User Experience Research</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Responsive Design</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Interaction Design</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Design Systems Development</p>
-                </NavLink>
-              </li>
-              <li>
-                <a href="https://sysrootsolution.com/" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <div className="font-semibold text-[#3F65B7]">Marketing CRM</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                </a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <NavLink to="/services/CCTVInstallation" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <div className="font-semibold text-[#3F65B7]">CCTV Installation</div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Residential CCTV Solutions</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Commercial CCTV Solutions</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">CCTV Accessories</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Additional Services</p>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/services/BusinessServices" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <div className="font-semibold text-[#3F65B7]">Business Services</div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">IT Support Services</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Digital Transformation</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Corporate Communication</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Marketing and Branding</p>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/services/Domain&Hosting" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <div className="font-semibold text-[#3F65B7]">Domain and Hosting</div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Domain Registration</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Specialized Hosting</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Domain and Hosting Management</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Website Security Services</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Technical Support</p>
-                </NavLink>
-              </li>
-            </ul>
+          <div className="max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white md:px-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
+              {services.map((service, index) => (
+                <ul key={index} className="space-y-2">
+                  <li>
+                    <NavLink
+                      to={service.link}
+                      className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+                      onClick={() => setIsDropdownOpen(false)}
+                    >
+                      <div className="font-semibold text-[#3F65B7]">{service.name}</div>
+                      {service.details.map((detail, i) => (
+                        <p key={i} className="text-sm text-gray-500 dark:text-gray-400">
+                          {detail}
+                        </p>
+                      ))}
+                    </NavLink>
+                  </li>
+                </ul>
+              ))}
+            </div>
           </div>
         </div>
       )}
