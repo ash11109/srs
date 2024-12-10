@@ -1,8 +1,99 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 import { FaPhone, FaLocationDot, FaFacebook, FaInstagram, FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import '../Footer/index.css'
 import logoSRS from './../../assets/Images/logo.png'
+
+const services = [
+  {
+    link: "/services/WebDevelopment",
+    name: "Web Development",
+    details: [
+      "Frontend Development",
+      "Backend Development",
+      "Full-stack Development",
+      "CMS Development",
+      "E-commerce Development",
+    ],
+  },
+  {
+    link: "/services/AppDevelopment",
+    name: "App Development",
+    details: [
+      "Native App Development",
+      "Cross-Platform Development",
+    ],
+  },
+  {
+    link: "/services/DigitalMarketing",
+    name: "Digital Marketing",
+    details: [
+      "Search Engine Optimization (SEO)",
+      "Social Media Marketing (SMM)",
+      "Content Marketing",
+      "Email Marketing",
+    ],
+  },
+  {
+    link: "/services/SoftwareDevelopment",
+    name: "Software Development",
+    details: [
+      "Custom Software Solutions",
+      "Enterprise Software Development",
+      "API Development and Integration",
+      "Desktop Application Development",
+    ],
+  },
+  {
+    link: "/services/UI&UXDesign",
+    name: "UI/UX Design",
+    details: [
+      "User Experience Research",
+      "Responsive Design",
+      "Interaction Design",
+      "Design Systems Development",
+    ],
+  },
+  {
+    link: "https://sysrootsolution.com/",
+    name: "Marketing CRM",
+    details: [
+      "Connect with third-party tools that you're already using.",
+    ],
+  },
+  {
+    link: "/services/CCTVInstallation",
+    name: "CCTV Installation",
+    details: [
+      "Residential CCTV Solutions",
+      "Commercial CCTV Solutions",
+      "CCTV Accessories",
+      "Additional Services",
+    ],
+  },
+  {
+    link: "/services/BusinessServices",
+    name: "Business Services",
+    details: [
+      "IT Support Services",
+      "Digital Transformation",
+      "Corporate Communication",
+      "Marketing and Branding",
+    ],
+  },
+  {
+    link: "/services/Domain&Hosting",
+    name: "Domain and Hosting",
+    details: [
+      "Domain Registration",
+      "Specialized Hosting",
+      "Domain and Hosting Management",
+      "Website Security Services",
+      "Technical Support",
+    ],
+  },
+];
 
 const Footer = () => {
   return (
@@ -106,53 +197,18 @@ const Footer = () => {
 
               <div className="footer-cols">
                 <p className="text-lg font-medium text-[#3F65B7]">Our Services</p>
-
                 <div className="mt-8">
-                  <ul className="space-y-4 text-sm">
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Web Development
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        App Developement
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Digital Marketing
-                      </a>
-                    </li>
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Software Development
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        UI/UX Design
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        CCTV Installation
-                      </a>
-                    </li>
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Business Services
-                      </a>
-                    </li>
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Domain & Hosting
-                      </a>
-                    </li>
+                  <ul className="space-y-2">
+                    {services.map((service, index) => (
+                      <li key={index}>
+                        <NavLink
+                          to={service.link}
+                          className="text-white transition hover:text-white/75" href="/"
+                        >
+                          <p className="text-white text-sm mb-3">{service.name}</p>
+                        </NavLink>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -163,29 +219,19 @@ const Footer = () => {
                 <nav className="mt-8">
                   <ul className="space-y-4 text-sm">
                     <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Blog
-                      </a>
+                      <NavLink to="/blog" className="text-white transition hover:text-white/75">Blog</NavLink>
                     </li>
                     <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Clients
-                      </a>
+                      <NavLink to="/clients" className="text-white transition hover:text-white/75">Clients</NavLink>
                     </li>
                     <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Products
-                      </a>
+                      <NavLink to="/products" className="text-white transition hover:text-white/75">Products</NavLink>
                     </li>
                     <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        FAQs
-                      </a>
+                      <NavLink to="/faq" className="text-white transition hover:text-white/75">FAQ</NavLink>
                     </li>
                     <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Support
-                      </a>
+                      <NavLink to="/support" className="text-white transition hover:text-white/75">Support</NavLink>
                     </li>
                   </ul>
                 </nav>
@@ -226,7 +272,7 @@ const Footer = () => {
                   >
                     <FaLocationDot className='text-white text-xl' />
                     <address className="-mt-0.5 not-italic text-white text-xs">
-                      New Kishore Ganj, Road No. 4,<br/>Ranchi, Jharkhand, <br/>834001
+                      New Kishore Ganj, Road No. 4,<br />Ranchi, Jharkhand, <br />834001
                     </address>
                   </li>
                 </ul>
