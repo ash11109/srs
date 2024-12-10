@@ -2,10 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { IoLogoInstagram } from "react-icons/io";
-import { FaLinkedinIn } from "react-icons/fa";
 import '../NavBar/index.css';
 
 const Navbar = () => {
@@ -41,14 +37,6 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-[9999999]">
-      <div className='w-full bg-[#3F65B7] md:table hidden shadow-sm'>
-        <div className='max-w-screen-xl mx-auto flex items-center justify-center d-flex gap-3'>
-          <a href="https://sysrootsolution.com/" target='blank'><FaFacebookF className='my-3 text-blue-100 hover:text-blue-500 cursor-pointer' /></a>
-          <a href="https://sysrootsolution.com/" target='blank'><FaTwitter className='my-3 text-xl text-blue-100 hover:text-blue-400 cursor-pointer' /></a>
-          <a href="https://sysrootsolution.com/" target='blank'><IoLogoInstagram className='my-3 text-xl text-blue-100 hover:text-yellow-500 cursor-pointer' /></a>
-          <a href="https://sysrootsolution.com/" target='blank'><FaLinkedinIn className='my-3 text-xl text-blue-100 hover:text-blue-300 cursor-pointer' /></a>
-        </div>
-      </div>
       <div className='w-full bg-blue-100'>
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2 md:p-5 relative">
           <a href="http://www.sysrootsolution.com" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -66,8 +54,8 @@ const Navbar = () => {
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
-          <div className='hidden md:table bg-blue-50 py-3 px-4 shadow-lg shadow-blue-50 cursor-pointer -rotate-6 absolute right-0 -top-7 rounded mr-5'>
-            <p className="flex items-center gap-2 text-gray-600"><FaPhoneAlt className='text-[#3F65B7]' /><span className='text-[27px] font-semibold'>+91-8789171115</span></p>
+          <div className='hidden md:table bg-blue-50 py-1 px-3 shadow-lg cursor-pointer -rotate-0 absolute right-0 top-1 rounded mr-2'>
+            <p className="flex items-center gap-2 text-gray-600 m-0"><FaPhoneAlt className='text-[#3F65B7]' /><span className='text-[20px] font-semibold'>+91-8789171115</span></p>
             <p className='flex items-center gap-2 text-gray-600'><IoMdMail className='text-[#3F65B7]' />info@sysrootsolution.com</p>
           </div>
         </div>
@@ -80,34 +68,32 @@ const Navbar = () => {
           <ul className="flex flex-col p-2 md:p-0 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
 
             <li className='cursor-pointer'>
-              <NavLink to="/" className="text-lg block p-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Home</NavLink>
+              <NavLink to="/" className="text-lg block py-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Home</NavLink>
             </li>
             <li className='cursor-pointer'>
-              <NavLink to="/about" className="text-lg block p-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">About</NavLink>
+              <NavLink to="/about" className="text-lg block py-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">About</NavLink>
             </li>
             <li className='cursor-pointer'>
-              <span onClick={toggleDropdown} ref={buttonRef} className='text-lg block p-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0'>Services</span>
+              <span onClick={toggleDropdown} ref={buttonRef} className='text-lg block py-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0'>Services</span>
             </li>
             <li className='cursor-pointer'>
-              <NavLink to="/products" className="text-lg block p-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Products</NavLink>
+              <NavLink to="/products" className="text-lg block py-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Products</NavLink>
             </li>
             <li className='cursor-pointer'>
-              <NavLink to="/clients" className="text-lg block p-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Clients</NavLink>
+              <NavLink to="/clients" className="text-lg block py-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Clients</NavLink>
             </li>
             <li className='cursor-pointer'>
-              <NavLink to="/blog" className="text-lg block p-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Blog</NavLink>
+              <NavLink to="/blog" className="text-lg block py-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Blog</NavLink>
             </li>
             <li className='cursor-pointer'>
-              <NavLink to="/contact" className="text-lg block p-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Contact</NavLink>
+              <NavLink to="/contact" className="text-lg block py-2 text-gray-100 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Contact</NavLink>
+            </li>
+            <li className='cursor-pointer'>
+              <NavLink to="/login" className="text-lg block py-2 underline text-blue-200 rounded hover:text-[#3F65B7] hover:bg-blue-100 md:hover:bg-transparent md:hover:text-emerald-100 md:p-0">Login</NavLink>
             </li>
           </ul>
         </div>
       </div>
-      {
-        
-      }
-
-      {/* <hr/> */}
       {isDropdownOpen && (
         <div id="mega-menu-full-dropdown" ref={dropdownRef} className="z-[99999] mt-1 border-gray-200 shadow bg-white dark:bg-gray-800  md:bg-blue-100 border-y dark:border-gray-600 absolute w-full">
           <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-3 md:px-6">

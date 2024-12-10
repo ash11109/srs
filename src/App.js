@@ -14,16 +14,16 @@ import Products from './pages/Products';
 import Clients from './pages/Clients';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import Header from './components/Header';
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
 
-
 function App() {
-
   return (
     <>
+      <Header />
+      <Navbar />
       <div className='flex flex-col justify-between min-h-screen relative'>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
