@@ -95,7 +95,7 @@ const Navbar = () => {
         </div>
       </div>
       {isDropdownOpen && (
-        <div id="mega-menu-full-dropdown" ref={dropdownRef} className="z-[99999] mt-1 border-gray-200 shadow bg-white dark:bg-gray-800  md:bg-blue-100 border-y dark:border-gray-600 absolute w-full">
+        <div id="mega-menu-full-dropdown" ref={dropdownRef} className="z-[99999] mt-1 border-gray-200 shadow bg-white dark:bg-gray-800  md:bg-blue-100 border-y dark:border-gray-600 static md:absolute w-full">
           <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-3 md:px-6">
             <ul>
               <li>

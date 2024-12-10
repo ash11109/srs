@@ -3,8 +3,8 @@ import React from 'react'
 const Newsletter = () => {
     return (
         <div>
-            <div className="w-full h-96 flex flex-col justify-center items-center p-5 my-1 bg-gradient-to-t from-[#162b58] to-[#3F65B7]">
-                <div className="w-full mb-6 xl:mb-0 sm:text-center mb-4">
+            <div className="w-full h-96 flex flex-col gap-3 justify-center items-center p-5 my-1 bg-gradient-to-t from-[#162b58] to-[#3F65B7]">
+                <div className="w-full mb-6 xl:mb-0 sm:text-center mb-3">
 
                     <div className=" text-gray-200 text-3xl font-extrabold">Join the community of our subscribers</div>
 
