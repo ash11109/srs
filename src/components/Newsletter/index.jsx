@@ -6,9 +6,9 @@ const Newsletter = () => {
             <div className="w-full h-96 flex flex-col gap-3 justify-center items-center p-5 my-1 bg-gradient-to-t from-[#162b58] to-[#3F65B7]">
                 <div className="w-full mb-6 xl:mb-0 sm:text-center mb-3">
 
-                    <div className=" text-gray-200 text-3xl font-extrabold">Join the community of our subscribers</div>
+                    <div className=" text-gray-200 text-3xl font-extrabold">How can we Help You ?</div>
 
-                    <div className="text-lg text-gray-400 hidden md:block">Stay in the loop with everything you need to know.</div>
+                    <div className="text-lg text-gray-400 hidden md:block">Get in touch.</div>
 
                 </div>
                 <div className="flex flex-col justify-center sm:flex-row gap-3 w-full">

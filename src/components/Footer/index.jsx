@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaPhone, FaLocationDot, FaFacebook, FaInstagram, FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import '../Footer/index.css'
-import logoSRS from './../../assets/Images/logo.png'
+import logoSRS from './../../assets/Images/srs/logo.png'
 
 const services = [
   {

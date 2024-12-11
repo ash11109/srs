@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import '../NavBar/index.css';
-import logoSRS from './../../assets/Images/logo.png'
+import logoSRS from './../../assets/Images/srs/logo.png'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
