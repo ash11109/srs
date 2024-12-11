@@ -74,7 +74,7 @@ const ClientSlider = () => {
               />
             ))}
           </div>
-          <div class="ml-10 logos-slider-container">
+          <div className="ml-10 logos-slider-container">
             {clients.map((client, i) => (
               <img
                 key={`duplicate-${i}`}
