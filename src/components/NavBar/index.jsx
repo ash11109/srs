@@ -151,7 +151,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-wrap justify-between items-center mx-auto w-full bg-[#3F65B7] shadow-sm nav-menu'>
+      <div className='flex flex-wrap justify-between items-center mx-auto w-full bg-[#3F65B7] nav-menu'>
         <div
           id="mega-menu-full"
           className={`items-center justify-between mx-auto font-medium max-w-screen-xl w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? 'block' : 'hidden'}`}

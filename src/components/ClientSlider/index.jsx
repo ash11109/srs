@@ -59,8 +59,8 @@ const ClientSlider = () => {
   return (
     <div className="my-3">
       <div>
-        <h1 className='text-3xl'>Clients Who Trust Us</h1>
-        <h2 className='text-xl'>Trusted by the Best, to Deliver the Best</h2>
+        <h1 className='text-2xl md:text-4xl px-4 pt-5 font-semibold font-light font-serif tracking-widest text-[#3F65B7]'>Clients Who Trust Us</h1>
+        <h2 className='text-sm md:text-xl px-4 pb-5 text-slate-400'>Trusted by the Best, to Deliver the Best</h2>
       </div>
       <div className="cardClient">
         <div className="logos-slider">
