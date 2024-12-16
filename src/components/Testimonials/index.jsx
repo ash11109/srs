@@ -111,7 +111,7 @@ const Testimonials = () => {
 		setTimeout(() => {
 			setFading(false);
 			setIndex(newIndex);
-		}, 500); // Match animation duration
+		}, 500);
 	};
 
 	const handleSelect = (selectedIndex) => {

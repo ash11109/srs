@@ -12,7 +12,7 @@
 }
 
 .sun {
-  background: linear-gradient(90deg, #bba43e, #e0761f);
+  background: radial-gradient(rgb(248, 163, 5), #eba818, #ebd059);
   box-shadow: 10px -10px 230px #ffee00;
   width: 10em;
   height: 10em;
@@ -57,7 +57,7 @@
   background: url("../../assets/Images/techs/java.png") no-repeat center;
   background-size: contain;
   background-size: 60px, 100px, auto;
-  background-color: #eee;
+  /* background-color: #eee; */
   width: 75px;
   height: 75px;
   border-radius: 100%;
@@ -79,7 +79,7 @@
   background: url("../../assets/Images/techs/docker.png") no-repeat center;
   background-size: contain;
   background-size: 90px, 150px, auto;
-  background-color: #eee;
+  background-color: #ffffff;
   width: 95px;
   height: 95px;
   border-radius: 100%;
@@ -90,7 +90,7 @@
   background: url("../../assets/Images/techs/nodejs.png") no-repeat center;
   background-size: contain;
   background-size: 90px, 150px, auto;
-  background-color: #eee;
+  background-color: #eeeeee90;
   width: 95px;
   height: 95px;
   border-radius: 100%;
