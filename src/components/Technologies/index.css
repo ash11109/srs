@@ -62,14 +62,14 @@
   width: 75px;
   height: 75px;
   border-radius: 100%;
-  margin-top: 130px;
+  margin-top: 105px;
 }
 
 .jupiter {
   background: url("../../assets/Images/techs/aws.png") no-repeat center;
   background-size: contain;
   background-size: 60px, 135px, auto;
-  box-shadow: 5px 0px 195px #eee;
+  box-shadow: 5px 0px 190px #eee;
   background-color: #ffffff79;
   width: 85px;
   height: 85px;
@@ -86,7 +86,8 @@
   width: 95px;
   height: 95px;
   border-radius: 100%;
-  margin-top: 200px;
+  margin-top: 300px;
+  margin-left: -42px;
 }
 
 .uranus {
@@ -98,7 +99,8 @@
   width: 95px;
   height: 95px;
   border-radius: 100%;
-  margin-top: 240px;
+  margin-top: 500px;
+  margin-left: -42px;
 }
 
 .neptune {
@@ -110,7 +112,8 @@
   width: 95px;
   height: 95px;
   border-radius: 100%;
-  margin-top: 270px;
+  margin-top: 700px;
+  margin-left: -15px;
 }
 
 .pluto {
@@ -120,7 +123,8 @@
   width: 90px;
   height: 90px;
   border-radius: 100%;
-  margin-top: 350px;
+  margin-top: 950px;
+  margin-left: 80px;
 }
 
 [class*="-orbit"] {
