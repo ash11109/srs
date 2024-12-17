@@ -1,7 +1,6 @@
 import React from 'react'
 import './index.css';
 import logoSRS from './../../assets/Images/srs/logo.png'
-import { SiJavascript } from "react-icons/si";
 
 const Technologies = () => {
 
@@ -14,7 +13,7 @@ const Technologies = () => {
     };
 
     return (
-        <div className='techContainer'>
+        <div className='techContainer my-5'>
             <div className="star-container">
                 {createStars(300)}
             </div>
