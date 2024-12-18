@@ -150,7 +150,7 @@
   height: 370px;
   margin: 5px auto;
   -webkit-animation: gravity 3.3365s linear infinite;
-  animation: gravity 3.3365s linear infinite;
+  animation: gravity 4.3365s linear infinite;
 }
 
 .earth-orbit {
@@ -158,7 +158,7 @@
   height: 490px;
   margin: -60px auto;
   -webkit-animation: gravity 6.673s linear infinite;
-  animation: gravity 6.673s linear infinite;
+  animation: gravity 7.673s linear infinite;
 }
 
 .mars-orbit {
@@ -166,7 +166,7 @@
   height: 610px;
   margin: -120px auto;
   -webkit-animation: gravity 10.0095s linear infinite;
-  animation: gravity 10.0095s linear infinite;
+  animation: gravity 11.0095s linear infinite;
 }
 
 .jupiter-orbit {
@@ -174,7 +174,7 @@
   height: 740px;
   margin: -190px auto;
   -webkit-animation: gravity 13.346s linear infinite;
-  animation: gravity 13.346s linear infinite;
+  animation: gravity 15.346s linear infinite;
 }
 
 .saturn-orbit {

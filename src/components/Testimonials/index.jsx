@@ -126,7 +126,7 @@ const Testimonials = () => {
 				<div className="grid grid-cols-12 gap-6 items-center justify-between mb-6 md:mb-12">
 					<div className="col-span-12 md:col-span-6 lg:col-span-4">
 						<h2 className="text-[32px] font-bold leading-normal text-[#162b58]">
-							Everyone should believe in What Our <span className="text-[#3F65B7]">Client</span> Say . . .
+							Everyone should believe in What Our <span className="text-[#3F65B7]">Clients</span> Say . . .
 						</h2>
 					</div>
 					<div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
