@@ -119,7 +119,7 @@ const Testimonials = () => {
 	};
 
 	return (
-		<section className="light py-14 md:py-24 bg-white relative z-[1] flex content-center items-center min-h-screen">
+		<section className="light py-5 md:py-24 bg-blue-50 relative z-[1] flex content-center items-center min-h-screen shadow-sm">
 			<ShapeOne />
 			<ShapeTwo />
 			<div className="container px-4 mx-auto">

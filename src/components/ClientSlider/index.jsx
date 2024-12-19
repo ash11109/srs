@@ -57,7 +57,7 @@ const clients = [
 
 const ClientSlider = () => {
   return (
-    <div className="py-5 bg-light">
+    <div className="py-5 shadow">
       <div className='container py-5'>
         <h2 className="text-[32px] font-bold leading-normal text-[#162b58]">
           <span className="text-[#3F65B7]">Clients</span> Who Trust Us . . .

@@ -13,7 +13,7 @@ const Technologies = () => {
     };
 
     return (
-        <div className='techContainer my-5'>
+        <div className='techContainer mt-5'>
             <div className="star-container">
                 {createStars(300)}
             </div>
