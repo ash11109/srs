@@ -49,8 +49,8 @@ const Technologies = () => {
             </div>
             <div className='absolute h-full w-full top-0 left-0 flex content-start items-start z-0'>
                 <div className='w-full p-5 mt-4'>
-                    <h1 className='text-4xl md:text-7xl lg:text-9xl text-orange-200 uppercase text-left  font-bold opacity-5'>Techs</h1>
-                    <h2 className='text-4xl md:text-7xl lg:text-9xl text-orange-200 uppercase text-left  font-bold opacity-5'>We're using . . .</h2>
+                    <h1 className='text-4xl md:text-7xl lg:text-9xl text-gray-400 uppercase text-left  font-bold opacity-10'>Techs</h1>
+                    <h2 className='text-4xl md:text-7xl lg:text-9xl text-gray-400 uppercase text-left  font-bold opacity-10'>We're using . . .</h2>
                 </div>
             </div>
         </div>

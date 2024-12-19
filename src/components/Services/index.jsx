@@ -78,7 +78,7 @@ const Services = () => {
                     {servicesList.map((service, index) => (
                         <div
                             key={index}
-                            className={`group relative shadow w-full md:max-w-sm lg:max-w-md bg-gray-50 rounded-2xl p-4 transition-all duration-500 min-h-72`}
+                            className={`group relative shadow w-full md:max-w-sm lg:max-w-md bg-gray-50 rounded-2xl p-4 transition-all duration-500 min-h-72 cursor-pointer`}
                             style={{ boxShadow: `0px 4px 6px ${service.colorTheme}` }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.backgroundColor = service.colorTheme;

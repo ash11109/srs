@@ -7,49 +7,105 @@ const Banner = () => {
         <>
             <div className='max-h-full overflow-hidden'>
                 <div className='relative'>
-                    <section className="w-full mx-auto flex flex-col px-8 pt-2 pb-10 sm:flex-row-reverse sm:px-12 bg-gradient-to-t from-blue-50 to-[#3F65B7] items-center">
+                    <section className="w-full mx-auto flex flex-col px-8 pt-2 pb-10 md:flex-row-reverse sm:px-12 bg-gradient-to-t from-blue-50 to-[#3F65B7] items-center">
                         <img
                             alt="SRSolution"
-                            className="mb-8 w-full dark:contrast-200 sm:mb-0 sm:ml-4 sm:w-1/2 z-10"
+                            className="mb-8 w-full dark:contrast-200 sm:mb-0 sm:ml-4 md:w-1/2 z-10"
                             src={banner}
                         />
-                        <div className="mr-4 w-full ml-10 md:text-left sm:w-1/2 sm:text-left z-20">
-                            <h1 className="mb-3  md:text-2xl lg:text-4xl xl:text-5xl font-bold leading-tight dark:text-dark-50 text-blue-950">
-                                <span className='text-violet-500'>C</span>
-                                <span className='text-indigo-500'>R</span>
-                                <span className='text-blue-500'>E</span>
-                                <span className='text-green-500'>A</span>
-                                <span className='text-yellow-500'>T</span>
-                                <span className='text-orange-500'>I</span>
-                                <span className='text-red-500'>V</span>
-                                <span className='text-white'>E </span>
-                                AND
-                                <span className='text-pink-100'> E</span>
-                                <span className='text-pink-200'>F</span>
-                                <span className='text-pink-300'>F</span>
-                                <span className='text-pink-400'>E</span>
-                                <span className='text-pink-500'>C</span>
-                                <span className='text-pink-600'>T</span>
-                                <span className='text-pink-700'>I</span>
-                                <span className='text-pink-800'>V</span>
-                                <span className='text-pink-900'>E,</span>
+                        <div className="mr-8 w-full ml-10 z-20">
+                            <div className="">
+                                <div className="max-w-xl mx-auto my-auto  dark:bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg px-4 pt-5 pb-2 rounded-md shadow">
+                                    <div className="text-center">
+                                        <h1 className="mb-2 text-xl lg:text-3xl font-semibold text-gray-100">Contact Us</h1>
+                                        <p className="text-gray-300 lg:text-sm text-xs">Fill up the form below to send us a message.</p>
+                                    </div>
+                                    <div className="my-7">
+                                        <form action="" method="" id="form">
+                                            <div className="mb-3 relative">
+                                                <input
+                                                    type="text"
+                                                    name="name"
+                                                    id="name"
+                                                    placeholder=" "
+                                                    required
+                                                    className="peer w-full bg-blue-50 px-3 pt-3 pb-2 placeholder-transparent border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 "
+                                                />
+                                                <label
+                                                    htmlFor="name"
+                                                    className="absolute left-3 top-0 text-sm text-gray-400 dark:text-gray-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
+                                                    Full Name
+                                                </label>
+                                            </div>
 
-                                <br />
-                                WE'RE EVERYWHERE
-                            </h1>
-                            <p className="sm:text-sm md:text-base lg:text-xl xl:text-2xl font-extralight mb-6 leading-relaxed text-slate-700 dark:text-slate-400">
-                                We at SysRoot Solution believe in making a strong presence in digital and technical world.
-                            </p>
-                            <button className="rounded-lg border-0 bg-[#3F65B7] px-4 py-2 sm:text-xs lg:text-lg xl:text-xl text-white shadow-lg shadow-blue-100 transition hover:bg-blue-900 hover:shadow-blue-400 dark:shadow-blue-900">
-                                Contact Now
-                            </button>
+                                            <div className="mb-3 relative">
+                                                <input
+                                                    type="email"
+                                                    name="email"
+                                                    id="email"
+                                                    placeholder=" "
+                                                    required
+                                                    className="peer w-full px-3 bg-blue-50 pt-3 pb-2 placeholder-transparent border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                                                />
+                                                <label
+                                                    htmlFor="email"
+                                                    className="absolute left-3 top-0 text-sm text-gray-600 dark:text-gray-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
+                                                    Email Address
+                                                </label>
+                                            </div>
+
+                                            <div className="mb-3 relative">
+                                                <input
+                                                    type="text"
+                                                    name="phone"
+                                                    id="phone"
+                                                    placeholder=" "
+                                                    required
+                                                    className="peer w-full px-3 pt-3 bg-blue-50 pb-2 placeholder-transparent border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                                                />
+                                                <label
+                                                    htmlFor="phone"
+                                                    className="absolute left-3 top-0 text-sm text-gray-600 dark:text-gray-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
+                                                    Phone Number
+                                                </label>
+                                            </div>
+
+                                            <div className="mb-3 relative">
+                                                <textarea
+                                                    rows="5"
+                                                    name="message"
+                                                    id="message"
+                                                    placeholder=""
+                                                    required
+                                                    className="peer w-full px-3 pt-3 bg-blue-50 pb-2 placeholder-transparent border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300">
+                                                </textarea>
+                                                <label
+                                                    htmlFor="message"
+                                                    className="absolute left-3 top-0 text-sm text-gray-600 dark:text-gray-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
+                                                    Your Message
+                                                </label>
+                                            </div>
+
+                                            <div className="mb-6">
+                                                <button
+                                                    type="submit"
+                                                    className="w-full px-3 py-3 text-white bg-blue-900 rounded-md focus:bg-blue-950 focus:outline-none">
+                                                    Send Message
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
-                    <div className='absolute top-0 w-full pt-24'>
-                        <h3 className='text-center text-[110px]  font-bold text-[#3F65B7] opacity-20 hidden xl:block'>From Code to Solutions </h3>
-                        <h3 className='text-center text-[80px] font-bold text-[#3F65B7] opacity-15 hidden lg:block'>From Code to Solutions </h3>
-                        <h3 className='text-center text-[50px] mt-3 font-bold text-[#3F65B7] opacity-10 hidden md:block'>From Code to Solutions </h3>
-                        <h3 className='text-center text-[40px] mt-4 font-bold text-[#3F65B7] opacity-5 hidden sm:block'>From Code to Solutions </h3>
+                    <div className='absolute top-0 right-0 w-full pt-24 pr-20'>
+                        <h3 className='text-right text-[60px] lg:text-[70px] font-bold text-[#3F65B7] opacity-20 hidden xl:block'>From Code to Solutions</h3>
+                        <h3 className='text-right text-[50px] lg:text-[60px] font-bold text-[#3F65B7] opacity-15 hidden lg:block'>From Code to Solutions </h3>
+                        <h3 className='text-right text-[40px] lg:text-[50px] font-bold text-[#3F65B7] opacity-10 hidden md:block'>From Code to Solutions </h3>
+                        <h3 className='text-right text-[30px] lg:text-[40px] mt-2 font-bold text-[#3F65B7] opacity-5 hidden sm:block'>From Code to Solutions </h3>
+                        <h3 className='text-right text-[20px] lg:text-[30px] mt-2 font-bold text-[#3F65B7] opacity-5 hidden md:block'>From Code to Solutions </h3>
+                        <h3 className='text-right text-[10px] lg:text-[20px] mt-2 font-bold text-[#3F65B7] opacity-5 hidden sm:block'>From Code to Solutions </h3>
                     </div>
                     <div id="background-wrap absolute w-full hidden md:block">
                         <div className="bubble x1"></div>
