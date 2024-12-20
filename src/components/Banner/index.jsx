@@ -7,7 +7,7 @@ const Banner = () => {
         <>
             <div className='max-h-full overflow-hidden'>
                 <div className='relative'>
-                    <section className="w-full mx-auto flex flex-col px-8 pt-2 pb-10 md:flex-row-reverse sm:px-12 bg-gradient-to-t from-blue-50 to-[#3F65B7] items-center">
+                    <section className="w-full mx-auto flex flex-col px-0 md:px-8 pt-2 pb-10 md:flex-row-reverse bg-gradient-to-t from-blue-50 to-[#3F65B7] items-center">
                         <img
                             alt="SRSolution"
                             className="mb-8 w-full dark:contrast-200 sm:mb-0 sm:ml-4 md:w-1/2 z-10"
@@ -17,7 +17,7 @@ const Banner = () => {
                             <div className="">
                                 <div className="max-w-xl mx-auto my-auto  dark:bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg px-4 pt-5 pb-2 rounded-md shadow">
                                     <div className="text-center">
-                                        <h1 className="mb-2 text-xl lg:text-3xl font-semibold text-gray-100">Contact Us</h1>
+                                        <h1 className="mb-2 text-xl lg:text-3xl font-semibold text-gray-100 tracking-wider">How Can We <span className='text-emerald-200'>Help</span> You?</h1>
                                         <p className="text-gray-300 lg:text-sm text-xs">Fill up the form below to send us a message.</p>
                                     </div>
                                     <div className="my-7">

@@ -138,7 +138,7 @@ const Testimonials = () => {
 					</div>
 				</div>
 
-				<div className="mt-12">
+				<div className="mt-16">
 					<div
 						className={`grid grid-cols-3 gap-6 transition-opacity duration-500 ${
 							fading ? "opacity-0" : "opacity-100"

@@ -145,7 +145,7 @@ const Navbar = () => {
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
-          <div className='hidden md:table bg-blue-50 py-1 px-3 shadow-lg cursor-pointer -rotate-0 absolute right-0 top-1 rounded mr-2'>
+          <div className='hidden md:table bg-blue-50 py-1 px-3 shadow-lg cursor-pointer -rotate-0 absolute right-0 top-2 rounded mr-2 animate-bounce'>
             <p className="flex items-center gap-2 text-gray-600 m-0"><FaPhoneAlt className='text-[#3F65B7]' /><span className='text-[20px] font-semibold'>+91-8789171115</span></p>
             <p className='flex items-center gap-2 text-gray-600'><IoMdMail className='text-[#3F65B7]' />info@sysrootsolution.com</p>
           </div>

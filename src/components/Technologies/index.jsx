@@ -13,38 +13,40 @@ const Technologies = () => {
     };
 
     return (
-        <div className='techContainer mt-5'>
+        <div className='techContainer py-5'>
             <div className="star-container">
                 {createStars(300)}
             </div>
-            <div className="container h-full z-10">
-                <div className="sun flex items-center"><h1 className='text-center w-full text-bold'><img src={logoSRS} alt="" className='p-4'/></h1></div>
-                <div className="mercury-orbit">
-                    <div className="mercury"></div>
-                </div>
-                <div className="venus-orbit">
-                    <div className="venus"></div>
-                </div>
-                <div className="earth-orbit">
-                    <div className="earth"></div>
-                </div>
-                <div className="mars-orbit">
-                    <div className="mars"></div>
-                </div>
-                <div className="jupiter-orbit">
-                    <div className="jupiter flex items-center"></div>
-                </div>
-                <div className="saturn-orbit">
-                    <div className="saturn"></div>
-                </div>
-                <div className="uranus-orbit">
-                    <div className="uranus"></div>
-                </div>
-                <div className="neptune-orbit">
-                    <div className="neptune"></div>
-                </div>
-                <div className="pluto-orbit">
-                    <div className="pluto"></div>
+            <div className="container h-full z-10 w-full">
+                <div>
+                    <div className="sun flex items-center"><h1 className='text-center w-full text-bold'><img src={logoSRS} alt="" className='p-4' /></h1></div>
+                    <div className="mercury-orbit">
+                        <div className="mercury"></div>
+                    </div>
+                    <div className="venus-orbit">
+                        <div className="venus"></div>
+                    </div>
+                    <div className="earth-orbit">
+                        <div className="earth"></div>
+                    </div>
+                    <div className="mars-orbit">
+                        <div className="mars"></div>
+                    </div>
+                    <div className="jupiter-orbit">
+                        <div className="jupiter flex items-center"></div>
+                    </div>
+                    <div className="saturn-orbit">
+                        <div className="saturn"></div>
+                    </div>
+                    <div className="uranus-orbit">
+                        <div className="uranus"></div>
+                    </div>
+                    <div className="neptune-orbit">
+                        <div className="neptune"></div>
+                    </div>
+                    <div className="pluto-orbit">
+                        <div className="pluto"></div>
+                    </div>
                 </div>
             </div>
             <div className='absolute h-full w-full top-0 left-0 flex content-start items-start z-0'>

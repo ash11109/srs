@@ -12,6 +12,28 @@
   transform: scale(0.6);
 }
 
+@media (max-width: 767.5px) {
+  .techContainer {
+    height: 110vh;
+  }
+
+  .techContainer .container {
+    transform: scale(0.5);
+  }  
+}
+
+@media (min-width: 768.5px) {
+  .techContainer {
+    height: 100vh;
+  } 
+}
+
+@media (min-width: 1023.5px) {
+  .techContainer {
+    height: 120vh;
+  }
+}
+
 .sun {
   background: radial-gradient(rgb(248, 151, 5), #eba510, #f0c94a);
   box-shadow: 10px -10px 250px #ffee00;
