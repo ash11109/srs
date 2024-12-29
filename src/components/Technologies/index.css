@@ -14,7 +14,7 @@
 .system {
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: 700px; 
   padding-top: 100%;
 }
 
@@ -38,7 +38,7 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 100%;
   transform: translate(-50%, -50%);
-  animation: spin infinite linear both;
+  animation: spin-planet infinite linear both;
 }
 
 .system__orbit:nth-child(1) {
@@ -121,7 +121,7 @@
 }
 
 .system__orbit--uranus {
-  animation-duration: 348.4s;
+  animation-duration: 248.4s;
 }
 
 .system__orbit--neptune {
@@ -129,7 +129,7 @@
 }
 
 .system__orbit--pluto {
-  animation-duration: 628.6s;
+  animation-duration: 728.6s;
 }
 
 .system__planet {
@@ -163,7 +163,7 @@
   height: 100%;
 }
 
-@keyframes spin {
+@keyframes spin-planet {
   from {
     transform: translate(-50%, -50%);
   }
@@ -2308,7 +2308,7 @@
     opacity: 0;
   }
 }
-
+ 
 @keyframes flash {
   0% {
     opacity: 0;
