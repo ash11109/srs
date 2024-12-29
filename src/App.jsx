@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 import WebDevelopment from './pages/Services/WebDevelopment';
@@ -11,9 +12,11 @@ import BusinessServices from './pages/Services/BusinessServices';
 import DomainHosting from './pages/Services/Domain&Hosting';
 import Products from './pages/Products';
 import Clients from './pages/Clients';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
-import Header from './components/Header';
+import Blog from './pages/More/Blog';
+import Contact from './pages/More/Contact';
+import Events from './pages/More/Events';
+import HelpCenter from './pages/More/HelpCenter';
+import Security from './pages/More/Security';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -22,21 +25,24 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services/WebDevelopment" element={<WebDevelopment />} />
-        <Route path="/services/AppDevelopment" element={<AppDevelopment />} />
-        <Route path="/services/DigitalMarketing" element={<DigitalMarketing />} />
-        <Route path="/services/SoftwareDevelopment" element={<SoftwareDevelopment />} />
-        <Route path="/services/UI&UXDesign" element={<UIUXDesign />} />
-        <Route path="/services/CCTVInstallation" element={<CCTVInstallation />} />
-        <Route path="/services/BusinessServices" element={<BusinessServices />} />
-        <Route path="/services/Domain&Hosting" element={<DomainHosting />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/clients" element={<Clients />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Services/WebDevelopment" element={<WebDevelopment />} />
+        <Route path="/Services/AppDevelopment" element={<AppDevelopment />} />
+        <Route path="/Services/DigitalMarketing" element={<DigitalMarketing />} />
+        <Route path="/Services/SoftwareDevelopment" element={<SoftwareDevelopment />} />
+        <Route path="/Services/UI&UXDesign" element={<UIUXDesign />} />
+        <Route path="/Services/CCTVInstallation" element={<CCTVInstallation />} />
+        <Route path="/Services/BusinessServices" element={<BusinessServices />} />
+        <Route path="/Services/Domain&Hosting" element={<DomainHosting />} />
+        <Route path="/Products" element={<Products />} />
+        <Route path="/Clients" element={<Clients />} />
+        <Route path="More/Blog" element={<Blog />} />
+        <Route path="More/Contact" element={<Contact />} />
+        <Route path="More/Events" element={<Events />} />
+        <Route path="More/HelpCenter" element={<HelpCenter />} />
+        <Route path="More/Security" element={<Security />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 };

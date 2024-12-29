@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from "react-router-dom";
 import srsLogo from '../../assets/images/logo/srs.png';
 import { IoIosHelpBuoy } from "react-icons/io";
 import { ImBlog } from "react-icons/im";
@@ -21,11 +22,11 @@ const Navbar = () => {
     const navLinks = [
         {
             title: "Home",
-            path: "/home",
+            path: "/",
         },
         {
             title: "About",
-            path: "/about",
+            path: "/About",
         },
         {
             title: "Services",
@@ -34,49 +35,49 @@ const Navbar = () => {
                     logo: <MdOutlineAppSettingsAlt />,
                     title: "App Development",
                     subTitle: "Innovative and user-friendly mobile applications to elevate your business.",
-                    path: "",
+                    path: "/Services/AppDevelopment",
                 },
                 {
                     logo: <SiJirasoftware />,
                     title: "Software Development",
                     subTitle: "Custom software solutions for streamlined operations.",
-                    path: "",
+                    path: "/Services/SoftwareDevelopment",
                 },
                 {
                     logo: <MdDesignServices />,
                     title: "UX / UI Design",
                     subTitle: "Crafting intuitive and visually appealing user experiences.",
-                    path: "",
+                    path: "/Services/UI&UXDesign",
                 },
                 {
                     logo: <CgWebsite />,
                     title: "Website Development",
                     subTitle: "Responsive and dynamic websites tailored to your needs.",
-                    path: "",
+                    path: "/Services/WebDevelopment",
                 },
                 {
                     logo: <BiSolidCctv />,
                     title: "CCTV Installation",
                     subTitle: "Reliable surveillance solutions for your safety and security",
-                    path: "",
+                    path: "/Services/CCTVInstallation",
                 },
                 {
                     logo: <FaDigitalOcean />,
                     title: "Digital Marketing",
                     subTitle: "Strategies that drive engagement and boost online presence.",
-                    path: "",
+                    path: "/Services/DigitalMarketing",
                 },
                 {
                     logo: <MdOutlineDomainAdd />,
                     title: "Domain & Hosting",
                     subTitle: "Secure and scalable domain registration and hosting services.",
-                    path: "",
+                    path: "/Services/Domain&Hosting",
                 },
                 {
                     logo: <FaBusinessTime />,
                     title: "Business Services",
                     subTitle: "Comprehensive solutions to support and grow your business.",
-                    path: "",
+                    path: "/Services/BusinessServices",
                 },
             ],
         },
@@ -95,31 +96,31 @@ const Navbar = () => {
                     logo: <ImBlog />,
                     title: "Blogs",
                     subTitle: "Discover More: Check Out Our Latest Blogs Here.",
-                    path: "",
+                    path: "More/Blog",
                 },
                 {
                     logo: <MdPhone />,
                     title: "Contact Us",
                     subTitle: "Need Assistance? Our Team is Just a Click Away!",
-                    path: "",
+                    path: "More/Contact",
                 },
                 {
                     logo: <MdEventAvailable />,
                     title: "Events",
                     subTitle: "Be Where It’s Happening! Explore Our Events Today.",
-                    path: "",
+                    path: "More/Events",
                 },
                 {
                     logo: <IoIosHelpBuoy />,
                     title: "Help Center",
                     subTitle: "Need Assistance? Visit Our Help Center for Quick Solutions.",
-                    path: "",
+                    path: "More/HelpCenter",
                 },
                 {
                     logo: <IoShieldCheckmarkOutline />,
                     title: "Security",
                     subTitle: "Understand how we take your privacy seriously.",
-                    path: "",
+                    path: "More/Security",
                 },
             ],
         },
@@ -165,7 +166,7 @@ const Navbar = () => {
                                         {
                                             link.path
                                             &&
-                                            <a href="#" className="text-base font-medium hover:text-srs-primary-hover text-srs-primary-hover">{link.title}</a>
+                                            <NavLink to={link.path} className="text-base font-medium hover:text-srs-primary-hover text-srs-primary-hover">{link.title}</NavLink>
                                         }
                                         {
                                             link.subMenu
@@ -207,11 +208,7 @@ const Navbar = () => {
                                                             {
                                                                 link.subMenu.map((link, index) => {
                                                                     return (
-                                                                        <a
-                                                                            key={index}
-                                                                            href="#"
-                                                                            className="-m-3 p-2 flex items-start rounded-lg hover:bg-gray-50 group"
-                                                                        >
+                                                                        <NavLink key={index} to={link.path} className="-m-3 p-2 flex items-start rounded-lg hover:bg-gray-50 group">
                                                                             <span className="text-srs-primary linkLogo transform transition-transform duration-300 ease-in-out group-hover:scale-110">
                                                                                 {link.logo}
                                                                             </span>
@@ -223,8 +220,7 @@ const Navbar = () => {
                                                                                     {link.subTitle}
                                                                                 </p>
                                                                             </div>
-                                                                        </a>
-
+                                                                        </NavLink>
                                                                     )
                                                                 })
                                                             }
@@ -287,15 +283,12 @@ const Navbar = () => {
                             <nav className="grid gap-y-5">
                                 {servicesSubMenu?.map((item, index) => (
                                     <div key={index} >
-                                        <a
-                                            href="#"
-                                            className="-m-2 px-3 py-1 flex items-center rounded-md hover:bg-gray-50"
-                                        >
+                                        <NavLink to={item.path} className="-m-2 px-3 py-1 flex items-center rounded-md hover:bg-gray-50">
                                             <span className='linkLogo text-srs-primary'>{item.logo}</span>
                                             <span className="ml-3 text-base font-medium text-gray-500">
                                                 {item.title}
                                             </span>
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 ))}
                             </nav>
@@ -305,14 +298,11 @@ const Navbar = () => {
                         <div className="grid grid-cols-2 gap-y-4 gap-x-8  bg-blue-50 rounded-md p-5">
                             {mobileNavs?.map((item, index) => (
                                 <div key={index}>
-                                    <a
-                                        href="#"
-                                        className="-m-4 px-3 py-2 flex items-center rounded-md text-srs-primary"
-                                    >
+                                    <NavLink to={item.path} className="-m-4 px-3 py-2 flex items-center rounded-md text-srs-primary">
                                         <span className="ml-3 text-base font-medium ">
                                             {item.title}
                                         </span>
-                                    </a>
+                                    </NavLink>
                                 </div>
                             ))}
                         </div>
