@@ -5,90 +5,97 @@ import { FaTelegramPlane } from "react-icons/fa";
 import '../Footer/index.css'
 import logoSRS from '../../assets/images/logo/srs.png'
 
-const services = [
-  {
-    link: "/services/WebDevelopment",
-    name: "Web Development",
-    details: [
-      "Frontend Development",
-      "Backend Development",
-      "Full-stack Development",
-      "CMS Development",
-      "E-commerce Development",
-    ],
-  },
-  {
-    link: "/services/AppDevelopment",
-    name: "App Development",
-    details: [
-      "Native App Development",
-      "Cross-Platform Development",
-    ],
-  },
-  {
-    link: "/services/DigitalMarketing",
-    name: "Digital Marketing",
-    details: [
-      "Search Engine Optimization (SEO)",
-      "Social Media Marketing (SMM)",
-      "Content Marketing",
-      "Email Marketing",
-    ],
-  },
-  {
-    link: "/services/SoftwareDevelopment",
-    name: "Software Development",
-    details: [
-      "Custom Software Solutions",
-      "Enterprise Software Development",
-      "API Development and Integration",
-      "Desktop Application Development",
-    ],
-  },
-  {
-    link: "/services/UI&UXDesign",
-    name: "UI/UX Design",
-    details: [
-      "User Experience Research",
-      "Responsive Design",
-      "Interaction Design",
-      "Design Systems Development",
-    ],
-  },
-  {
-    link: "/services/CCTVInstallation",
-    name: "CCTV Installation",
-    details: [
-      "Residential CCTV Solutions",
-      "Commercial CCTV Solutions",
-      "CCTV Accessories",
-      "Additional Services",
-    ],
-  },
-  {
-    link: "/services/BusinessServices",
-    name: "Business Services",
-    details: [
-      "IT Support Services",
-      "Digital Transformation",
-      "Corporate Communication",
-      "Marketing and Branding",
-    ],
-  },
-  {
-    link: "/services/Domain&Hosting",
-    name: "Domain and Hosting",
-    details: [
-      "Domain Registration",
-      "Specialized Hosting",
-      "Domain and Hosting Management",
-      "Website Security Services",
-      "Technical Support",
-    ],
-  },
-];
-
 const Footer = () => {
+
+  // "About us" column
+  const about = [
+    {
+      link: "/about",
+      name: "Company History",
+    },
+    {
+      link: "/team",
+      name: "Meet the Team",
+    },
+    {
+      link: "more/blog",
+      name: "Blog",
+    },
+    {
+      link: "more/events",
+      name: "Events",
+    },
+    {
+      link: "/career",
+      name: "Career",
+    },
+  ];
+
+  // "Our Services" Column
+  const services = [
+    {
+      link: "/services/WebDevelopment",
+      name: "Web Development",
+    },
+    {
+      link: "/services/AppDevelopment",
+      name: "App Development",
+    },
+    {
+      link: "/services/DigitalMarketing",
+      name: "Digital Marketing",
+    },
+    {
+      link: "/services/SoftwareDevelopment",
+      name: "Software Development",
+    },
+    {
+      link: "/services/UI&UXDesign",
+      name: "UI/UX Design",
+    },
+    {
+      link: "/services/CCTVInstallation",
+      name: "CCTV Installation",
+    },
+    {
+      link: "/services/BusinessServices",
+      name: "Business Services",
+    },
+    {
+      link: "/services/Domain&Hosting",
+      name: "Domain and Hosting",
+    },
+  ];
+
+  // "Helpful Links" Column
+  const helpfulLinks = [
+    {
+      link: "/clients",
+      name: "Clients",
+    },
+    {
+      link: "/products",
+      name: "Products",
+    },
+    {
+      link: "/faq",
+      name: "FAQ",
+    },
+    {
+      link: "more/contact",
+      name: "Contact Us",
+    },
+    {
+      link: "more/helpCenter",
+      name: "Help center",
+    },
+    {
+      link: "more/security",
+      name: "Security",
+    },
+  ];
+
+
   return (
     <>
       <footer className="bg-[#162b58] bottom-0 overflow-hidden">
@@ -167,29 +174,16 @@ const Footer = () => {
 
                 <nav className="mt-8">
                   <ul className="space-y-4 text-sm">
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Company History
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Meet the Team
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Careers
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="text-white transition hover:text-white/75" href="/">
-                        Events
-                      </a>
-                    </li>
+                    {about.map((service, index) => (
+                      <li key={index}>
+                        <NavLink
+                          to={service.link}
+                          className="text-white transition hover:text-white/75" href="/"
+                        >
+                          <p className="text-white text-sm mb-3">{service.name}</p>
+                        </NavLink>
+                      </li>
+                    ))}
                   </ul>
                 </nav>
               </div>
@@ -217,21 +211,16 @@ const Footer = () => {
 
                 <nav className="mt-8">
                   <ul className="space-y-4 text-sm">
-                    <li>
-                      <NavLink to="/blog" className="text-white transition hover:text-white/75">Blog</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/clients" className="text-white transition hover:text-white/75">Clients</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/products" className="text-white transition hover:text-white/75">Products</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/faq" className="text-white transition hover:text-white/75">FAQ</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/support" className="text-white transition hover:text-white/75">Support</NavLink>
-                    </li>
+                  {helpfulLinks.map((service, index) => (
+                      <li key={index}>
+                        <NavLink
+                          to={service.link}
+                          className="text-white transition hover:text-white/75" href="/"
+                        >
+                          <p className="text-white text-sm mb-3">{service.name}</p>
+                        </NavLink>
+                      </li>
+                    ))}
                   </ul>
                 </nav>
               </div>
