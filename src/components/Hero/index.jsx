@@ -1,4 +1,5 @@
-import banner from '../../assets/images/hero/girl.png'
+import banner from '../../assets/images/hero/girl.png';
+import './index.css';
 
 const Hero = () => {
     return (
@@ -6,11 +7,12 @@ const Hero = () => {
             <div className='relative'>
                 <section className="w-full mx-auto flex flex-col px-0 md:px-8 pt-2 pb-10 md:flex-row-reverse bg-gradient-to-t from-blue-50 to-[#3F65B7] items-center">
                     <img
+                        title="Welcome! How May I Help You?"
                         alt="SRSolution"
-                        className="mb-8 w-full dark:contrast-200 sm:mb-0 sm:ml-4 md:w-1/2 z-10"
+                        className="mb-8 w-full dark:contrast-200 sm:mb-0 sm:ml-4 md:w-1/2 z-10 filter"
                         src={banner}
                     />
-                    <div className="mr-8 w-full ml-10 z-10">
+                    <div className="mr-8 w-full ml-10 z-10 mt-2">
                         <div className="">
                             <div className="max-w-xl mx-auto my-auto  dark:bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg px-4 xl:p-10 pt-5 pb-2 rounded-md shadow-xl">
                                 <div className="text-center">
@@ -96,12 +98,8 @@ const Hero = () => {
                         </div>
                     </div>
                 </section>
-                <div className='absolute top-0 right-0 w-full pt-24 pr-20'>
-                    <h3 className='text-right text-[50px] lg:text-[60px] font-bold text-[#3F65B7] opacity-15 hidden lg:block animate-pulse'>From Code to Solutions </h3>
-                    <h3 className='text-right text-[40px] lg:text-[50px] font-bold text-[#3F65B7] opacity-10 hidden md:block animate-pulse'>From Code to Solutions </h3>
-                    <h3 className='text-right text-[30px] lg:text-[40px] mt-2 font-bold text-[#3F65B7] opacity-5 hidden sm:block animate-pulse'>From Code to Solutions </h3>
-                    <h3 className='text-right text-[20px] lg:text-[30px] mt-2 font-bold text-[#3F65B7] opacity-5 hidden md:block animate-pulse'>From Code to Solutions </h3>
-                    <h3 className='text-right text-[10px] lg:text-[20px] mt-2 font-bold text-[#3F65B7] opacity-5 hidden sm:block animate-pulse'>From Code to Solutions </h3>
+                <div className='absolute top-0 left-0 w-full py-24'>
+                    <marquee className="text-left tracking-wide text-[140px] md:text-[270px] font-extrabold md:font-bold text-[#3F65B7] opacity-15 lg:block animate-pulse uppercase">From Code To solution</marquee>
                 </div>
                 <div id="background-wrap absolute w-full hidden md:block">
                     <div className="bubble x1"></div>

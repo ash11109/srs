@@ -132,14 +132,14 @@ const Navbar = () => {
     const mobileNavs = [...mainNavs, ...(moreSubMenu || [])];
 
     return (
-        <div className="relative bg-white">
+        <div className="relative bg-blue-50 shadow-lg">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="flex justify-between items-center border-b-2 border-gray-100 py-3 lg:py-3 xl:py-4 xxl:py-5 lg:justify-start md:space-x-10">
+                <div className="flex justify-between items-center border-b-2 border-gray-100 py-3  xxl:py-5 lg:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <a href="#">
                             <span className="sr-only">SRSolution</span>
                             <img
-                                className="h-8 w-auto sm:h-10"
+                                className="h-8 w-auto sm:h-12"
                                 src={srsLogo}
                                 alt=""
                             />
@@ -148,7 +148,7 @@ const Navbar = () => {
                     <div className="-mr-2 -my-2 lg:hidden">
                         <button
                             type="button"
-                            className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            className="rounded-md p-2 inline-flex items-center justify-center text-srs-primary hover:text-gray-500 hover:bg-gray-100"
                             onClick={() => setOpen(!open)}
                         >
                             <span className="sr-only">Open menu</span>
@@ -165,21 +165,21 @@ const Navbar = () => {
                                         {
                                             link.path
                                             &&
-                                            <a href="#" className="text-base font-medium text-gray-500 hover:text-srs-primary-hover">{link.title}</a>
+                                            <a href="#" className="text-base font-medium hover:text-srs-primary-hover text-srs-primary-hover">{link.title}</a>
                                         }
                                         {
                                             link.subMenu
                                             &&
                                             <div className="relative">
-                                                <button type="button" className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 "
+                                                <button type="button" className="group rounded-md text-srs-primary inline-flex items-center text-base font-medium hover:text-gray-900 "
                                                     onClick={() => toggleSubMenu(index)}
                                                 >
                                                     <span className='group-hover:text-srs-primary-hover'>{link.title}</span>
                                                     <svg
                                                         className={
                                                             openSubmenu === index
-                                                                ? "transform rotate-180 ml-2 h-5 w-5 text-gray-400 group-hover:text-srs-primary-hover transition ease-out duration-200"
-                                                                : "ml-2 h-5 w-5 text-gray-400 group-hover:text-srs-primary-hover"
+                                                                ? "transform rotate-180 ml-2 h-5 w-5 group-hover:text-srs-primary text-srs-primary-hover transition ease-out duration-200"
+                                                                : "ml-2 h-5 w-5 text-srs-primary group-hover:text-srs-primary-hover"
                                                         }
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 20 20"
@@ -197,8 +197,8 @@ const Navbar = () => {
                                                     onMouseLeave={() => setOpenSubmenu(null)}
                                                     className={
                                                         openSubmenu === index
-                                                            ? " opacity-100 translate-y-0 transition ease-out duration-200 absolute z-[999999] -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
-                                                            : " opacity-0 translate-y-1 absolute z-[999999] -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                                                            ? " block translate-y-0 transition ease-out duration-200 absolute z-[999999] -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                                                            : " hidden translate-y-1 absolute z-[999999] -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
                                                     }
                                                 >
                                                     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
@@ -250,8 +250,8 @@ const Navbar = () => {
             <div
                 className={
                     open
-                        ? "opacity-100 scale-100 ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-[999999]"
-                        : "opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-[999999]"
+                        ? "block scale-100 ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-[999999]"
+                        : "hidden scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-[999999]"
                 }
             >
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
