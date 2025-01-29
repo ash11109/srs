@@ -1,4 +1,4 @@
-import jspc from '../../assets/Images/clients/jspc.png';
+import jspc from '../../assets/images/clients/jspc.png';
 import chamaktaHindustan from '../../assets/Images/clients/chamaktahindustanlogo-1024x1024.png';
 import foodCourt from '../../assets/Images/clients/foodcourt.png';
 import aamdani from '../../assets/Images/clients/chota-logo-aamdani-1024x449.png';
