@@ -12,11 +12,11 @@ import BusinessServices from './pages/Services/BusinessServices';
 import DomainHosting from './pages/Services/Domain&Hosting';
 import Products from './pages/Products';
 import Clients from './pages/Clients';
-import Blog from './pages/more/Blog';
-import Contact from './pages/more/Contact';
-import Events from './pages/more/Events';
-import HelpCenter from './pages/more/HelpCenter';
-import Security from './pages/more/Security';
+import Blog from './pages/More/Blog';
+import Contact from './pages/More/Contact';
+import Events from './pages/More/Events';
+import HelpCenter from './pages/More/HelpCenter';
+import Security from './pages/More/Security';
 import Footer from './components/Footer';
 
 const App = () => {
