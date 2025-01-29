@@ -12,7 +12,7 @@ const TeamMembers = () => {
                     </div>
                     <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
                         <p className="text-lg leading-[1.7] opacity-60">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum corporis fugit minima voluptate, obcaecati omnis dignissimos mollitia similique debitis veniam ducimus, tempore perferendis voluptatibus provident ipsa expedita quia labore quod.
+                            "Meet Our Team – the heart of Sysroot Solution Pvt Ltd! Our passionate experts drive innovation, turning challenges into cutting-edge solutions."
                         </p>
                     </div>
                 </div>

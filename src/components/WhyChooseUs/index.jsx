@@ -12,12 +12,55 @@ const WhyChooseUs = () => {
                     </div>
                     <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
                         <p className="text-lg leading-[1.7] opacity-60">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum corporis fugit minima voluptate, obcaecati omnis dignissimos mollitia similique debitis veniam ducimus, tempore perferendis voluptatibus provident ipsa expedita quia labore quod.
+
+                            <section >
+                                <div className="max-w-4xl mx-auto text-center">
+                                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                                        About Sysroot Solution Pvt Ltd
+                                    </h2>
+                                    <p className="text-gray-700 text-lg leading-relaxed">
+                                        Sysroot Solution Pvt Ltd is a leading software and app development company committed to delivering cutting-edge digital solutions.
+                                        We specialize in <strong>custom software development, web applications, mobile apps, and enterprise solutions</strong> tailored to your business needs.
+                                        With a focus on innovation, scalability, and security, we empower businesses with next-gen technology.
+                                    </p>
+                                </div>
+
+                                <div className="max-w-4xl mx-auto mt-8">
+                                    <h3 className="text-2xl font-semibold text-gray-900 text-center mb-4">
+                                        Why Choose Us?
+                                    </h3>
+                                    <ul className="space-y-4">
+                                        {[
+                                            ["Expert Development Team", "Our skilled professionals ensure high-quality, future-ready solutions."],
+                                            ["Custom & Scalable Solutions", "We develop software that grows with your business."],
+                                            ["Latest Technologies", "We leverage modern tech stacks for efficiency and performance."],
+                                            ["Timely Delivery", "We prioritize deadlines without compromising quality."],
+                                            ["Cost-Effective Services", "Get premium solutions at competitive prices."],
+                                            ["Dedicated Support", "Our customer support ensures smooth post-deployment assistance."]
+                                        ].map(([title, desc], index) => (
+                                            <li key={index} className="flex items-start space-x-3">
+                                                <span className="text-green-500 text-xl">✅</span>
+                                                <div>
+                                                    <h4 className="text-lg font-medium text-gray-900">{title}</h4>
+                                                    <p className="text-gray-700">{desc}</p>
+                                                </div>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="text-center mt-8">
+                                    <p className="text-lg font-semibold text-gray-900">
+                                        Partner with Sysroot Solution Pvt Ltd and transform your ideas into reality!
+                                    </p>
+                                </div>
+                            </section>
+
                         </p>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-9 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center">
-                    
+
                 </div>
             </div>
         </section>
