@@ -135,12 +135,12 @@ const Navbar = () => {
     return (
         <div className="relative bg-blue-50 shadow-lg">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="flex justify-between items-center border-b-2 border-gray-100 py-3  xxl:py-5 lg:justify-start md:space-x-10">
+                <div className="flex justify-between items-center py-2 lg:py-2 xxl:py-5 lg:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <a href="#">
                             <span className="sr-only">SRSolution</span>
                             <img
-                                className="h-8 w-auto sm:h-12"
+                                className="h-7 w-auto sm:h-10"
                                 src={srsLogo}
                                 alt=""
                             />

@@ -130,7 +130,7 @@ const Testimonials = () => {
 						</h2>
 					</div>
 					<div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
-						<p className="text-lg leading-[1.7] opacity-60">
+						<p className="text-lg leading-[1.7] opacity-60 text-gray-700">
 							"Everyone should believe in what our clients say – their success stories reflect our commitment to excellence. See how we turn ideas into impactful solutions!" 
 						</p>
 					</div>

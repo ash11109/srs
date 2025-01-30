@@ -69,7 +69,7 @@ const Services = () => {
                         </h2>
                     </div>
                     <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
-                        <p className="text-lg leading-[1.7] opacity-60">
+                        <p className="text-lg leading-[1.7] opacity-60 text-gray-700">
                             At Sysroot Solution Pvt Ltd, we offer custom software development, mobile and web app development, enterprise solutions, and SaaS platforms tailored to your business needs. Our expertise in cutting-edge technologies ensures scalable, secure, and high-performance solutions that drive digital transformation.
                         </p>
                     </div>
