@@ -23,28 +23,26 @@ const App = () => {
   return (
     <>
       <div className='flex flex-col justify-between min-h-screen'>
-        <div>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services/WebDevelopment" element={<WebDevelopment />} />
-            <Route path="/services/AppDevelopment" element={<AppDevelopment />} />
-            <Route path="/services/DigitalMarketing" element={<DigitalMarketing />} />
-            <Route path="/services/SoftwareDevelopment" element={<SoftwareDevelopment />} />
-            <Route path="/services/UI&UXDesign" element={<UIUXDesign />} />
-            <Route path="/services/CCTVInstallation" element={<CCTVInstallation />} />
-            <Route path="/services/BusinessServices" element={<BusinessServices />} />
-            <Route path="/services/Domain&Hosting" element={<DomainHosting />} />
-            <Route path="/Products" element={<Products />} />
-            <Route path="/Clients" element={<Clients />} />
-            <Route path="more/Blog" element={<Blog />} />
-            <Route path="more/Contact" element={<Contact />} />
-            <Route path="more/Events" element={<Events />} />
-            <Route path="more/HelpCenter" element={<HelpCenter />} />
-            <Route path="more/Security" element={<Security />} />
-          </Routes>
-        </div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services/WebDevelopment" element={<WebDevelopment />} />
+          <Route path="/services/AppDevelopment" element={<AppDevelopment />} />
+          <Route path="/services/DigitalMarketing" element={<DigitalMarketing />} />
+          <Route path="/services/SoftwareDevelopment" element={<SoftwareDevelopment />} />
+          <Route path="/services/UI&UXDesign" element={<UIUXDesign />} />
+          <Route path="/services/CCTVInstallation" element={<CCTVInstallation />} />
+          <Route path="/services/BusinessServices" element={<BusinessServices />} />
+          <Route path="/services/Domain&Hosting" element={<DomainHosting />} />
+          <Route path="/Products" element={<Products />} />
+          <Route path="/Clients" element={<Clients />} />
+          <Route path="more/Blog" element={<Blog />} />
+          <Route path="more/Contact" element={<Contact />} />
+          <Route path="more/Events" element={<Events />} />
+          <Route path="more/HelpCenter" element={<HelpCenter />} />
+          <Route path="more/Security" element={<Security />} />
+        </Routes>
         <Footer />
       </div>
     </>

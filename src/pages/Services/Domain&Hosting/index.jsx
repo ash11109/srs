@@ -1,8 +1,20 @@
-import React from 'react'
+import PageHeading from '../../../components/PageHeading';
+import Breadcrumb from '../../../components/Breadcrumb';
 
 const DomainHosting = () => {
+  const pageTitle = "Domain & Hosting";
+  const pageSubTitle = "Secure, Fast & Scalable Web Solutions";
+
+  const breadcrumbRoutes = [
+    { path: "#", label: "Services" },
+    { path: "/services/Domain&Hosting", label: "Domain & Hosting" }
+  ];
+
   return (
-    <div>DomainHosting</div>
+    <div>
+      <PageHeading pageTitle={pageTitle} pageSubTitle={pageSubTitle} />
+      <Breadcrumb routes={breadcrumbRoutes} />
+    </div>
   )
 }
 
