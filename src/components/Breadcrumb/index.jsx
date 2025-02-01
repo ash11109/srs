@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FaHome, FaChevronRight } from "react-icons/fa";
+import './index.css';
 
 const Breadcrumb = ({ routes }) => {
   return (

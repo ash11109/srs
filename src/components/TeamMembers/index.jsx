@@ -1,6 +1,6 @@
-import React from 'react'
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import defaultTeamMember from '../../assets/images/team/user_default.png';
+import './index.css';
 
 const TeamMembers = () => {
     const teamMembers = [

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import chamkta_Hindustan from '../../assets/images/clients/chamkta_hindustan.jpeg';
 import jspc_reg from '../../assets/images/clients/jspc_.jpg';
+import './index.css';
 
 const testimonialList = [
 	[

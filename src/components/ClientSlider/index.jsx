@@ -8,7 +8,7 @@ import gpi from '../../assets/images/clients/GPILOGO-1024x295.png';
 import urban from '../../assets/images/clients/urbandslogo-6-1024x258.png';
 import mixed2 from '../../assets/images/clients/logo2-39xi92rprx1pflyzgei3gq.png';
 import mixed3 from '../../assets/images/clients/logo.png';
-import '../ClientSlider/index.css';
+import './index.css';
 
 const clients = [
   {

@@ -1,11 +1,12 @@
 import TopBar from '../TopBar';
-import Navbar from '../Navbar';
+import navBar from '../navBar';
+import './index.css';
 
 const Header = () => {
     return (
         <>
             <TopBar />
-            <Navbar />
+            <navBar />
         </>
     )
 }

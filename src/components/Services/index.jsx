@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.css';
 import { CgWebsite } from "react-icons/cg";
 import { MdDeveloperMode } from "react-icons/md";
