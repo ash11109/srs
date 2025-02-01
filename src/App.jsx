@@ -26,22 +26,22 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/services/WebDevelopment" element={<WebDevelopment />} />
-          <Route path="/services/AppDevelopment" element={<AppDevelopment />} />
-          <Route path="/services/DigitalMarketing" element={<DigitalMarketing />} />
-          <Route path="/services/SoftwareDevelopment" element={<SoftwareDevelopment />} />
-          <Route path="/services/UI&UXDesign" element={<UIUXDesign />} />
-          <Route path="/services/CCTVInstallation" element={<CCTVInstallation />} />
-          <Route path="/services/BusinessServices" element={<BusinessServices />} />
-          <Route path="/services/Domain&Hosting" element={<DomainHosting />} />
-          <Route path="/Products" element={<Products />} />
-          <Route path="/Clients" element={<Clients />} />
-          <Route path="more/Blog" element={<Blog />} />
-          <Route path="more/Contact" element={<Contact />} />
-          <Route path="more/Events" element={<Events />} />
-          <Route path="more/HelpCenter" element={<HelpCenter />} />
-          <Route path="more/Security" element={<Security />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/web_development" element={<WebDevelopment />} />
+          <Route path="/app_development" element={<AppDevelopment />} />
+          <Route path="/digital_marketing" element={<DigitalMarketing />} />
+          <Route path="/software_development" element={<SoftwareDevelopment />} />
+          <Route path="/ui_ux_design" element={<UIUXDesign />} />
+          <Route path="/cctv_installation" element={<CCTVInstallation />} />
+          <Route path="/business_services" element={<BusinessServices />} />
+          <Route path="/domain_hosting" element={<DomainHosting />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/help_center" element={<HelpCenter />} />
+          <Route path="/security" element={<Security />} />
         </Routes>
         <Footer />
       </div>
