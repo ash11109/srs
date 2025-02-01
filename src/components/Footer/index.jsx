@@ -147,7 +147,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    href="/"
+                    href="https://github.com/sysroot-solution"
                     rel="noopener noreferrer"
                     target="_blank"
                     className="text-[#3F65B7] transition hover:text-gray-300"
