@@ -11,7 +11,7 @@ import { SiJirasoftware } from "react-icons/si";
 import { BiSolidCctv } from "react-icons/bi";
 import './index.css';
 
-const Navbar = () => {
+const NavBar = () => {
     const [open, setOpen] = useState(false);
     const [openSubmenu, setOpenSubmenu] = useState(null);
 
@@ -321,4 +321,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default NavBar
