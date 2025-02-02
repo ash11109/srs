@@ -18,11 +18,12 @@ import Events from './pages/More/Events';
 import HelpCenter from './pages/More/HelpCenter';
 import Security from './pages/More/Security';
 import Footer from './components/Footer';
+import NoPage from './components/NoPage';
 
 const App = () => {
   return (
     <>
-      <div className='flex flex-col justify-between min-h-screen'>
+      <div className='flex flex-col min-h-screen'>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/events" element={<Events />} />
           <Route path="/help_center" element={<HelpCenter />} />
           <Route path="/security" element={<Security />} />
+          <Route path="*" element={<NoPage />} />
         </Routes>
         <Footer />
       </div>
