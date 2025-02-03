@@ -9,12 +9,12 @@ const Hero = () => {
                     <img
                         title="Welcome! How May I Help You?"
                         alt="SRSolution"
-                        className="mb-8 w-full dark:contrast-200 sm:mb-0 sm:ml-4 md:w-1/2 z-10 filter"
+                        className="mb-8 w-full sm:mb-0 sm:ml-4 md:w-1/2 z-10 filter"
                         src={banner}
                     />
                     <div className="mr-8 w-full ml-10 z-10 mt-2">
                         <div className="">
-                            <div className="max-w-xl mx-auto my-auto  dark:bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg px-4 xl:p-10 pt-5 pb-2 rounded-md shadow-xl">
+                            <div className="max-w-xl mx-auto my-auto bg-opacity-50 backdrop-filter backdrop-blur-lg px-4 xl:p-10 pt-5 pb-2 rounded-md shadow-xl">
                                 <div className="text-center">
                                     <h1 className="mb-2 text-xl lg:text-3xl font-semibold text-gray-100 tracking-wider animate-bounce">How Can We <span className='text-emerald-200 animate-bounce inline-block'>Help</span> You?</h1>
                                     <p className="text-gray-300 lg:text-sm text-xs">Fill up the form below to send us a message.</p>
@@ -32,7 +32,7 @@ const Hero = () => {
                                             />
                                             <label
                                                 htmlFor="name"
-                                                className="absolute left-3 top-0 text-sm text-gray-400 dark:text-gray-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
+                                                className="absolute left-3 top-0 text-sm text-gray-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
                                                 Full Name
                                             </label>
                                         </div>
@@ -48,7 +48,7 @@ const Hero = () => {
                                             />
                                             <label
                                                 htmlFor="email"
-                                                className="absolute left-3 top-0 text-sm text-gray-600 dark:text-gray-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
+                                                className="absolute left-3 top-0 text-sm text-gray-600 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
                                                 Email Address
                                             </label>
                                         </div>
@@ -64,7 +64,7 @@ const Hero = () => {
                                             />
                                             <label
                                                 htmlFor="phone"
-                                                className="absolute left-3 top-0 text-sm text-gray-600 dark:text-gray-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
+                                                className="absolute left-3 top-0 text-sm text-gray-600 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
                                                 Phone Number
                                             </label>
                                         </div>
@@ -80,7 +80,7 @@ const Hero = () => {
                                             </textarea>
                                             <label
                                                 htmlFor="message"
-                                                className="absolute left-3 top-0 text-sm text-gray-600 dark:text-gray-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
+                                                className="absolute left-3 top-0 text-sm text-gray-600 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#3F65B7]">
                                                 Your Message
                                             </label>
                                         </div>
