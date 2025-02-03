@@ -137,14 +137,14 @@ const NavBar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center py-2 lg:py-2 xxl:py-5 lg:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
-                        <a href="#">
+                        <NavLink to="/">
                             <span className="sr-only">SRSolution</span>
                             <img
                                 className="h-7 w-auto sm:h-10"
                                 src={srsLogo}
                                 alt=""
                             />
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="-mr-2 -my-2 lg:hidden">
                         <button
@@ -208,7 +208,7 @@ const NavBar = () => {
                                                             {
                                                                 link.subMenu.map((link, index) => {
                                                                     return (
-                                                                        <NavLink key={index} to={link.path} className="-m-3 p-2 flex items-start rounded-lg hover:bg-gray-50 group">
+                                                                        <NavLink key={index} to={link.path} onClick={() => toggleSubMenu(false)} className="-m-3 p-2 flex items-start rounded-lg hover:bg-gray-50 group">
                                                                             <span className="text-srs-primary linkLogo transform transition-transform duration-300 ease-in-out group-hover:scale-110">
                                                                                 {link.logo}
                                                                             </span>
@@ -246,18 +246,18 @@ const NavBar = () => {
             <div
                 className={
                     open
-                        ? "block scale-100 ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-[999999]"
+                        ? "block scale-100 ease-out duration-200 absolute top-0 inset-x-0 p-1 transition transform origin-top-right lg:hidden z-[999999]"
                         : "hidden scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-[999999]"
                 }
             >
-                <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-                    <div className="pt-5 pb-6 px-5 bg-blue-50">
+                <div className="rounded-lg shadow-lg ring-1 border bg-srs-primary border-gray-50/30 ring-black ring-opacity-5 bg-opacity-50 backdrop-filter backdrop-blur-lg divide-y-[1px] divide-gray-50/30">
+                    <div className="pt-2 pb-6 px-5">
                         <div className="flex items-center justify-between">
                             <div>
-                                <img className="h-8 w-auto" src={srsLogo} alt="SRSolution" />
+                                <img className="h-7 w-auto" src={srsLogo} alt="SRSolution" />
                             </div>
                             <div className="-mr-2">
-                                <button type="button" className="rounded-md p-1 inline-flex items-center justify-center text-gray-400 hover:text-srs-primary-hover"
+                                <button type="button" className="rounded-md p-1 inline-flex items-center justify-center text-gray-100 hover:text-srs-primary-hover"
                                     onClick={() => setOpen(!open)}
                                 >
                                     <span className="sr-only">Close menu</span>
@@ -279,13 +279,13 @@ const NavBar = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="border-white rounded-md border-2 p-8 mt-4 bg-white">
+                        <div className=" rounded-md p-8 mt-4 shadow-sm bg-srs-primary/60 border border-white/10">
                             <nav className="grid gap-y-5">
                                 {servicesSubMenu?.map((item, index) => (
                                     <div key={index} >
-                                        <NavLink to={item.path} className="-m-2 px-3 py-1 flex items-center rounded-md hover:bg-gray-50">
-                                            <span className='linkLogo text-srs-primary'>{item.logo}</span>
-                                            <span className="ml-3 text-base font-medium text-gray-500">
+                                        <NavLink to={item.path} onClick={() => setOpen(!open)} className="-m-2 px-2 py-1 flex items-center rounded-md hover:bg-gray-50">
+                                            <span className='linkLogo text-blue-100'>{item.logo}</span>
+                                            <span className="ml-3 text-sm tracking-wide font-medium text-blue-100">
                                                 {item.title}
                                             </span>
                                         </NavLink>
@@ -295,11 +295,11 @@ const NavBar = () => {
                         </div>
                     </div>
                     <div className="py-6 px-5 space-y-6">
-                        <div className="grid grid-cols-2 gap-y-4 gap-x-8  bg-blue-50 rounded-md p-5">
+                        <div className="grid grid-cols-2 gap-y-4 gap-x-8 shadow-sm border border-white/10 bg-srs-primary/60 rounded-md p-5">
                             {mobileNavs?.map((item, index) => (
                                 <div key={index}>
-                                    <NavLink to={item.path} className="-m-4 px-3 py-2 flex items-center rounded-md text-srs-primary">
-                                        <span className="ml-3 text-base font-medium ">
+                                    <NavLink to={item.path} onClick={() => setOpen(!open)} className="-m-4 px-3 py-2 flex items-center rounded-md text-srs-primary">
+                                        <span className="ml-3 mt-1 text-blue-100 text-sm font-medium">
                                             {item.title}
                                         </span>
                                     </NavLink>
@@ -309,7 +309,7 @@ const NavBar = () => {
                         <div>
                             <a
                                 href="#"
-                                className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-srs-primary hover:bg-srs-primary-hover"
+                                className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-srs-primary/90 hover:bg-srs-primary-hover/90"
                             >
                                 Sign In
                             </a>

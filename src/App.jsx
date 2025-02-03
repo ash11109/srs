@@ -22,25 +22,6 @@ import Layout from './pages/Layout';
 const App = () => {
   return (
     <Routes>
-      {/* <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/web_development" element={<WebDevelopment />} />
-      <Route path="/app_development" element={<AppDevelopment />} />
-      <Route path="/digital_marketing" element={<DigitalMarketing />} />
-      <Route path="/software_development" element={<SoftwareDevelopment />} />
-      <Route path="/ui_ux_design" element={<UIUXDesign />} />
-      <Route path="/cctv_installation" element={<CCTVInstallation />} />
-      <Route path="/business_services" element={<BusinessServices />} />
-      <Route path="/domain_hosting" element={<DomainHosting />} />
-      <Route path="/products" element={<Products />} />
-      <Route path="/clients" element={<Clients />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/events" element={<Events />} />
-      <Route path="/help_center" element={<HelpCenter />} />
-      <Route path="/security" element={<Security />} />
-      <Route path="*" element={<NoPage />} /> */}
-
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
